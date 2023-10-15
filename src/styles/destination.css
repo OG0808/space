@@ -1,0 +1,67 @@
+.container_destination {
+  max-width: 1440px;
+  width: 100%;
+  height: 900px;
+  flex-direction: column;
+  gap: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.destination__title {
+  display: flex;
+  width: 1440px;
+  padding-left: 166px;
+  gap: 28px;
+}
+.destination__title > p {
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  opacity: 0.25;
+}
+
+.destination__title > h2 {
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+}
+
+.info_of_planet {
+  max-width: 445px;
+  width: 100%;
+  height: 472px;
+  display: flex;
+  gap: 157px;
+  justify-content: center;
+}
+
+.info>ul{
+    max-width: 542px;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 165px;
+}
+
+.info>ul>li{
+color: #FFF;
+font-family: Barlow Condensed;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 2.7px;
+}
+

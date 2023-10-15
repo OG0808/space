@@ -1,0 +1,64 @@
+body{
+  background-color: black;
+
+}
+
+.HOME{
+  padding-top: 40px;
+  width: 100%;
+  height: 900px;
+  background-image: url("../images/home/background-home-desktop.jpg");
+  mix-blend-mode: screen;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   position: relative;
+}
+.DESTINATION{
+  padding-top: 40px;
+  width: 100%;
+  height: 900px;
+  background-image: url("../images/destination/background-destination-desktop.jpg");
+  mix-blend-mode: screen;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   position: relative;
+}
+
+.CREW {
+  padding-top: 40px;
+  width: 100%;
+  height: 900px;
+  background-image: url("../images//crew/background-crew-desktop.jpg");
+  mix-blend-mode: screen;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   position: relative;
+}
+
+.TECHNOLOGY{
+  padding-top: 40px;
+  width: 100%;
+  height: 900px;
+  background-image: url("../images/technology/background-technology-desktop.jpg");
+  mix-blend-mode: screen;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   position: relative;
+}
+
