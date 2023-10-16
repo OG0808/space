@@ -4,9 +4,6 @@ import moon from "../images/destination/image-moon.png"
 
 const Destination = () => {
 
-  const handleClick = (link) => {
-    setActiveLink(link);
-  };
 
   return (
     <section className="container_destination">

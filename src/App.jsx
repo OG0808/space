@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import "./styles/App.css"
 import Home from './routes/Home'
@@ -13,22 +13,30 @@ import { useBgStore } from './store/useBgStore'
 
 
 const App = () => {
+  const bg = useBgStore(state => state.bg)
 
+  const [changeBG, setChangeBG] = useState("")
 
+  useEffect(() => {
+    if (bg === 1) {
+      return setChangeBG("DESTINATION")
+    } else if (bg === 2) {
+      return setChangeBG("CREW")
+    } else if (bg === 3) {
+      return setChangeBG("TECHNOLOGY")
+    }
+  }, [bg])
 
-   const bg = useBgStore(state=>state.bg)
-  
-  
 
   return (
-    <div className={bg ? bg : "HOME"}>
-        <Navbar/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='destination' element={<Destination/>}/>
-          <Route path='crew' element={<Crew/>}/>
-          <Route path='technology' element={<Technology/>}/>
-        </Routes>
+    <div className={changeBG ? changeBG : "HOME"}>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='destination' element={<Destination />} />
+        <Route path='crew' element={<Crew />} />
+        <Route path='technology' element={<Technology />} />
+      </Routes>
     </div>
   )
 }

@@ -6,9 +6,9 @@ import { useBgStore } from "../store/useBgStore";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState(null);
-
-  const handleClick = (link) => {
-    setActiveLink(link);
+console.log(activeLink);
+  const handleClick = (index) => {
+    setActiveLink(index);
   };
   const changeBg = useBgStore((state) => state.changeBg);
 
@@ -30,7 +30,7 @@ const Navbar = () => {
                 <Link
                   to={link === "HOME" ? "/" : `/${link.toLowerCase()}`}
                   key={index}
-                  onClick={() => handleClick(link)}
+                  onClick={() => handleClick(index)}
                   className={activeLink === index ? "active" : ""}
                 >
                   <span>0{index}</span> {link}
